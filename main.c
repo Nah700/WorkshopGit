@@ -9,10 +9,15 @@ int main(void)
 {
     int a = 5;
     int b = 15;
+}
 
-    // Ajouter une fonction qui effectue plusieurs opérations sur les deux variables prototyper de la sorte:
-    // void transform_numbers(int *a, int *b);
-    // L'appeler ici à la place de ce commentaire
-    display_result(a + b);
-    return 0;
+
+void transform_numbers(int *a, int *b)
+{
+    if (a == NULL || b == NULL) {
+        return;
+    }
+    *a += *b;         
+    *b = *a - *b;     
+    *a -= *b;                  
 }
