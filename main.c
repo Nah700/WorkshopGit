@@ -21,5 +21,7 @@ int main(void)
     transform_numbers(&a, &b);
     display_result(transform_numbers);
     display_result(a + b);
+    display_result(ah_jadore_ce_nombre + b);
+    dprintf(1, "It works !\n");
     return 0;
 }
