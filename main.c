@@ -5,11 +5,6 @@ void display_result(int result)
     printf("The result of the sum is the number %d.\n", result);
 }
 
-int transform_numbers(int a, int b)
-{
-        return (a + b);
-}
-
 void transform_number(int *a, int*b)
 {
     *a = 7;
