@@ -7,19 +7,16 @@ void display_result(int result)
 
 void transform_numbers(int *a, int *b)
 {
-    *a = *a * 2;
-    *b = *b + 3;
+    *a += 4;
+    *b = *a * 4;
 }
 
 int main(void)
 {
-    int a = 3;
-    int ah_jadore_ce_nombre = 5000;
+    int a = 5;
     int b = 15;
 
-    // Ajouter une fonction qui effectue plusieurs opérations sur les deux variables prototyper de la sorte:
-    // void transform_numbers(int *a, int *b);
-    transform_numbers(&a, &b);
+    transform_number(&a, &b);
     display_result(a + b);
     display_result(ah_jadore_ce_nombre + b);
     dprintf(1, "It works !\n");
