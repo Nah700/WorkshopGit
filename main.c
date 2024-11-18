@@ -10,9 +10,18 @@ int transform_numbers(int a, int b)
         return (a + b);
 }
 
+void transform_number(int *a, int*b)
+{
+    a[0] = (*a + *b) * *a;
+    b[0] = (*b + *a) * *b;
+}
+
 int main(void)
 {
     int a = 5;
     int b = 15;
-    int c = transform_numbers(a,b);
+
+    transform_number(&a, &b);
+    display_result(a + b);
+    return 0;
 }
