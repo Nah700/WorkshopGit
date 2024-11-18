@@ -21,4 +21,6 @@ int main(void)
     // L'appeler ici à la place de ce commentaire
     transform_numbers(a, b);
     display_result(a + b);
+
+    return 0;
 }
