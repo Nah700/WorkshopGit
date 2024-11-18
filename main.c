@@ -9,6 +9,7 @@ void transform_number(int *a, int*b)
 {
     *a = 7;
     *b = 6;
+    
 }
 
 int main(void)
