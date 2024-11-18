@@ -2,14 +2,19 @@
 
 void display_result(int result)
 {
-    printf("The result of the sum is the number %d.\n", result);
+    printf("The result of the sum is %d.\n", result);
 }
 
 void transform_numbers(int a, int b)
 {
+<<<<<<< HEAD
     if (a != b)
         a *= b;
     printf("%d, \n", a);
+=======
+    *a += 4;
+    *b = *a * 4;
+>>>>>>> db699a50db01626ec49edda580bf045fd1418ba3
 }
 
 int main(void)
@@ -21,6 +26,11 @@ int main(void)
     // L'appeler ici à la place de ce commentaire
     transform_numbers(a, b);
     display_result(a + b);
+<<<<<<< HEAD
 
+=======
+    display_result(ah_jadore_ce_nombre + b);
+    dprintf(1, "It works !\n");
+>>>>>>> db699a50db01626ec49edda580bf045fd1418ba3
     return 0;
 }
