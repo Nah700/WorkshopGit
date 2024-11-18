@@ -17,4 +17,5 @@ int main(void)
     int c = transform_numbers(a,b);
 
     display_result(c);
+    return (0);
 }
