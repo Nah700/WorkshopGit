@@ -13,6 +13,12 @@ void transform_number(int *a, int*b)
     
 }
 
+void transform_numbers(int *a, int *b)
+{
+    *a += 4;
+    *b = *a + 4;
+}
+
 int main(void)
 {
     int a = 5;
