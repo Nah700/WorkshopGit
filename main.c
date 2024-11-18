@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+void transform_numbers(int *a, int *b)
+{
+    if (a == NULL || b == NULL) {
+        return;
+    }
+    *a += *b;         
+    *b = *a - *b;     
+    *a -= *b;                  
+}
+
 void display_result(int result)
 {
     printf("The result of the sum is %d.\n", result);
@@ -24,7 +34,7 @@ int main(void)
 
     transform_number(&a, &b);
     display_result(a + b);
-    display_result(ah_jadore_ce_nombre + b);
+    display_result(a + b);
     dprintf(1, "It works !\n");
     return 0;
 }
