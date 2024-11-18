@@ -13,14 +13,10 @@ void transform_numbers(int *a, int *b)
 
 int main(void)
 {
-    int ah_jadore_ce_nombre = 5000;
+    int a = 5;
     int b = 15;
 
-    transform_numbers(&a, &b);
-    // Ajouter une fonction qui effectue plusieurs opérations sur les deux variables prototyper de la sorte:
-    // void transform_numbers(int *a, int *b);
-    // L'appeler ici à la place de ce commentaire
-    display_result(ah_jadore_ce_nombre + b);
-    dprintf(1, "It work !\n");
+    transform_number(&a, &b);
+    display_result(a + b);
     return 0;
 }
